@@ -32,4 +32,5 @@ pipeline {
 					sh "./gradlew sonarqube -Dsonar.projectKey=calculator -Dsonar.login=838cd97c9d441fe15b07e71d038868502c26d068"
 				}
 			}
+		}
 }
