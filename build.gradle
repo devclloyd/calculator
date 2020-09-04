@@ -2,12 +2,19 @@ plugins {
 	id 'org.springframework.boot' version '2.3.3.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
 	id 'java'
+	id 'jacoco'
+	id 'org.sonarqube' version '3.0'
+	// id 'checkstyle'
 }
 
-
-
-apply plugin: "jacoco"
-
+// apply plugin: "jacoco"
+// apply plugin: "checkstyle"
+// checkstyle {
+		// toolVersion = "7.6.1"
+		// configFile = rootProject.file('config/checkstyle/checkstyle.xml')
+		// checkstyleTest.enabled = false
+		// checkstyleTest.enabled = true
+// }
 group = 'com.clloyd'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
@@ -41,3 +48,4 @@ jacocoTestCoverageVerification {
 test {
 	useJUnitPlatform()
 }
+
